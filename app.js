@@ -27,7 +27,7 @@ const app=express()
 app.use(express.json());
 const {v4:uuidv4}=require("uuid")
 //import { v4 as uuidv4 } from "uuid";
-mongoose.connect("mongodb://localhost:27017/expenses").then(()=>{
+mongoose.connect("mongodb+srv://varshamurugeshan:varshamr@cluster0.gb2dd.mongodb.net/expenses").then(()=>{
     console.log("Connected to mongodb");
 });
 const expenseSchema=new mongoose.Schema({
